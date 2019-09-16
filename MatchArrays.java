@@ -39,7 +39,7 @@ public class MatchArrays{
         //does not works with andrea[j] = 123 and maria[j] = 3211
 
         //this is not allowed andrea[j] = 9 and maria[j] = 1
-        //andrea increments twice 9 + 1 = 0 -> 0 + 1 = 1
+        //andrea increments twice: 9 + 1 = 0 -> 0 + 1 = 1
         int moves = calcMinimumMoves(andrea, maria);
 
         System.out.println("Moves: " + moves);
