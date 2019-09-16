@@ -33,6 +33,13 @@ public class MatchArrays{
     public static void main(String[] args) {
         int [] andrea = {123,543};
         int [] maria = {321,279};
+        //this works only if andrea[j] and maria[j] are same magnitud
+        //example:
+        //works with this andrea[i] = 123 and maria[j] = 321
+        //does not works with andrea[i] = 123 and maria[j] = 3211
+
+        //this is not allowed andrea[j] = 9 and maria[j] = 1
+        //andrea increments twice 9 + 1 = 0 -> 0 + 1 = 1
         int moves = calcMinimumMoves(andrea, maria);
 
         System.out.println("Moves: " + moves);
